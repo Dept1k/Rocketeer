@@ -14,7 +14,7 @@
     <div class="wrapper">
       <div class="content">
         <div class="homepage">
-          <div class="header">
+          <header class="header">
             <div class="header__container">
               <div class="header__bg">
                 <div class="header__bs"></div>
@@ -40,7 +40,7 @@
                 </nav>
               </div>
             </div>
-          </div>
+          </header>
 
           <div class="future">
             <div class="future__container">
@@ -60,16 +60,16 @@
                 <div class="news__text">
                   <p>Enter your email to get the latest news</p>
                 </div>
-              </div>
-              <div class="news__form">
-                <input
-                  type="text"
-                  class="news__input"
-                  placeholder="Enter your email here"
-                />
-                <button type="submit" class="news__btn">
-                  <span class="news__btn-name">Submit</span>
-                </button>
+                <form class="news__form">
+                  <input
+                    type="text"
+                    class="news__input"
+                    placeholder="Enter your email here"
+                  />
+                  <button type="submit" class="news__btn">
+                    <span class="news__btn-name">Submit</span>
+                  </button>
+                </form>
               </div>
             </div>
           </div>
@@ -103,13 +103,16 @@
           </div>
         </div>
 
-        <div class="product1">
-          <div class="product1__container">
-            <div class="product1__row">
-              <div class="product1__img">
-                <img src="./source/img/Image2.png" alt="" />
+        <div class="product product__bg-top">
+          <div class="product__container">
+            <div class="product__row">
+              <div class="product__img">
+                <img
+                  src="./source/img/Image2.png"
+                  alt="helmet left side picture"
+                />
               </div>
-              <div class="product1__body">
+              <div class="product__body">
                 <div class="product__title">
                   <h2>Advanced communications system</h2>
                 </div>
@@ -128,13 +131,16 @@
             </div>
           </div>
         </div>
-        <div class="product2">
-          <div class="product2__container">
-            <div class="product2__row">
-              <div class="product2__img">
-                <img src="./source/img/Image22.png" alt="" />
+        <div class="product product__bg-down">
+          <div class="product__container">
+            <div class="product__row">
+              <div class="product__img product__img-right">
+                <img
+                  src="./source/img/Image22.png"
+                  alt="helmet right side picture"
+                />
               </div>
-              <div class="product2__body">
+              <div class="product__body product__body-left">
                 <div class="product__title">
                   <h2>Improved ventilation system</h2>
                 </div>

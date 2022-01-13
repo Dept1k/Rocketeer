@@ -2,7 +2,7 @@
 @font-face {
   font-family: "Vollkorn";
   src: url("source/fonts/Vollkorn-Medium.woff2") format("woff2"),
-    url("/fonts/Vollkorn-Medium.woff") format("woff");
+    url("fonts/Vollkorn-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -56,7 +56,7 @@
   position: relative;
   height: 100%;
   width: 100%;
-  background: center / cover no-repeat url("/source/img/home__background.png");
+  background: center / cover no-repeat url("source/img/home__background.png");
 }
 .homepage::after {
   content: "";
@@ -65,7 +65,7 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  background: url("/source/img/Divider_1.png");
+  background: url("source/img/Divider_1.png");
 }
 .header {
   position: absolute;
@@ -308,33 +308,44 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    background: url("/source/img/Divider_2.png") no-repeat;
+    background: url("source/img/Divider_2.png") no-repeat;
     z-index: -10;
   }
 }
 
-.product1 {
+.product {
   height: 100%;
-  width: 100vw;
+  width: 100%;
   position: relative;
+}
+.product__bg-top {
   background: center/ cover no-repeat
     url("source/img/Information__background2.png");
 }
+.product__bg-top::after {
+  content: "";
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: url("source/img/Divider_1.png") no-repeat;
+}
 
-.product1__container {
+.product__container {
   height: 100%;
   max-width: 1314px;
   margin: 0px auto;
-  padding: 5% 0;
+  padding: 7.5% 0;
 }
-.product1__row {
+.product__row {
   z-index: 10;
   height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.product1__body {
+.product__body {
   z-index: 10;
   max-width: 630px;
   padding: 1%;
@@ -387,68 +398,27 @@
   position: absolute;
   right: 17%;
   top: 60.25%;
-  background: url("/source/img/arrow.svg") no-repeat;
+  background: url("source/img/arrow.svg") no-repeat;
 }
-.product1__body::before {
-  display: none;
-  content: "";
-  position: absolute;
-  right: -55%;
-  top: 0%;
-  width: 100%;
-  height: 100%;
-  background: no-repeat url("source/img/Ellipse1.png");
-  z-index: -1;
+
+.product__bg-down {
+  background: center/ cover no-repeat
+    url("source/img/Information__background22.png");
 }
-.product1__body::after {
+.product__bg-down::after {
   content: "";
   width: 100%;
   height: 4px;
   position: absolute;
   bottom: 0;
   left: 0;
-  background: url("/source/img/Divider_1.png") no-repeat;
-  z-index: -10;
+  background: url("source/img/Divider_2.png") no-repeat;
 }
-
-.product2 {
-  height: 100%;
-  width: 100vw;
-  position: relative;
-  background: center/ cover no-repeat
-    url("source/img/Information__background22.png");
-
-  &__container {
-    height: 100%;
-    max-width: 1314px;
-    margin: 0px auto;
-    padding: 5% 0;
-  }
-
-  &__row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  &__img {
-    order: 2;
-  }
-
-  &__body {
-    padding: 1%;
-    order: 1;
-    max-width: 630px;
-  }
-  .product2__body::after {
-    content: "";
-    width: 100%;
-    height: 4px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background: url("/source/img/Divider_2.png") no-repeat;
-  }
+.product__img-right {
+  order: 2;
+}
+.product__body-left {
+  order: 1;
 }
 .prices {
   height: 100%;
@@ -621,10 +591,24 @@
   }
 }
 @media (max-width: 754px) {
-  .product1__body {
-    order: 1;
+  .product__row {
+    flex-wrap: wrap;
+    justify-content: center;
   }
-  .product1__img {
+  .product__body {
+    max-width: 430px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .product__title {
+    text-align: center;
+  }
+  .product__text {
+    text-align: center;
+  }
+  .product__body-left {
     order: 2;
   }
   .product__title {
