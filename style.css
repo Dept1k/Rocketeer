@@ -496,7 +496,9 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   bottom: 0;
   left: 0;
+
   background: url("source/img/Divider_2.png") no-repeat;
+
 }
 
 .product__img-right {
@@ -507,8 +509,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .product__body-left {
   -webkit-box-ordinal-group: 2;
+
       -ms-flex-order: 1;
           order: 1;
+
 }
 
 .prices {
