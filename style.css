@@ -151,7 +151,7 @@ h6 {
   position: relative;
   height: 100%;
   width: 100%;
-  background: center/cover no-repeat url("/source/img/home__background.png");
+  background: center/cover no-repeat url("source/img/home__background.png");
 }
 
 .homepage::after {
@@ -161,7 +161,7 @@ h6 {
   position: absolute;
   bottom: 0;
   left: 0;
-  background: url("/source/img/Divider_1.png");
+  background: url("source/img/Divider_1.png");
 }
 
 .header {
@@ -408,7 +408,7 @@ h6 {
   position: absolute;
   bottom: 0;
   left: 0;
-  background: url("/source/img/Divider_2.png") no-repeat;
+  background: url("source/img/Divider_2.png") no-repeat;
   z-index: -10;
 }
 
@@ -499,7 +499,7 @@ h6 {
   position: absolute;
   right: 17%;
   top: 60.25%;
-  background: url("/source/img/arrow.svg") no-repeat;
+  background: url("source/img/arrow.svg") no-repeat;
 }
 
 .product1__body::before {
@@ -521,7 +521,7 @@ h6 {
   position: absolute;
   bottom: 0;
   left: 0;
-  background: url("/source/img/Divider_1.png") no-repeat;
+  background: url("source/img/Divider_1.png") no-repeat;
   z-index: -10;
 }
 
@@ -568,7 +568,7 @@ h6 {
   position: absolute;
   bottom: 0;
   left: 0;
-  background: url("/source/img/Divider_2.png") no-repeat;
+  background: url("source/img/Divider_2.png") no-repeat;
 }
 
 .prices {
